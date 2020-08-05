@@ -1,0 +1,51 @@
+<header>
+    <nav id="main-navbar" class="navbar navbar-expand-md navbar-toggleable-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar-menu"
+                    aria-controls="navbar-menu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar-menu" class="navbar-collapse collapse">
+                <ul class="navbar-nav">
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"
+                                href="#"
+                                id="{{- .Name -}}-dropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-expanded="false">{{ .Name }}</a>
+                                <ul class="dropdown-menu" aria-labelledby="{{- .Name -}}-dropdown">
+                                        {{ range .Children }}
+                                            <li><a class="dropdown-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
+                                                href="{{ .URL }}">{{ .Name }}</a></li>
+                                        {{ end }}
+                                </ul>
+                            </li>
+                        {{ else }}
+                            <li class="nav-item">
+                                <a class="nav-link {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"
+                                href="{{ .URL }}">
+                                    <span>{{ .Name }}</span>
+                                </a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://williamstead.com">Wil's Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.jessihigginbotham.com">Jessi's Website</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

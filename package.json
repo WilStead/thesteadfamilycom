@@ -1,0 +1,12 @@
+{
+    "name": "williamstead.com",
+    "private": true,
+    "version": "2.0.0",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.3.0",
+        "autoprefixer": "^9.8.6",
+        "bootstrap": "next",
+        "postcss-cli": "^7.1.1",
+        "typescript": "^3.9.7"
+    }
+}

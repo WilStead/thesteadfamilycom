@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [ "dom", "ES2015", "ES2017.String", "dom.iterable", "scripthost" ],
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "outDir": "assets/js",
+        "target": "ES2015",
+    },
+    "exclude": [
+        "node_modules"
+    ]
+  }
+  
