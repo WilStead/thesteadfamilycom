@@ -7,10 +7,10 @@ defaults:
 on:
     push:
         branches:
-            - master
+            - main
 
 env:
-    HUGO_VERSION: 0.74.3
+    HUGO_VERSION: 0.91.0
     BASE_URL: https://thesteadfamily.com
     AZURE_STORAGE_ACCOUNT: thesteadfamilycomstorage
 
