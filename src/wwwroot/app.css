@@ -1,0 +1,98 @@
+﻿:root {
+    --tavenem-dark-color-text: #f1dac0;
+    --tavenem-dark-color-link: #faab64;
+    --tavenem-dark-color-link-hover: #ffb03b;
+    --tavenem-dark-color-primary-hue: 38;
+    --tavenem-dark-color-primary-saturation: 47%;
+    --tavenem-dark-color-primary-lightness: 52%;
+    --tavenem-light-color-text: #3d2f22;
+    --tavenem-light-color-link: #a47143;
+    --tavenem-light-color-link-hover: #dd9933;
+    --tavenem-light-color-bg: #f9f9f9;
+    --tavenem-light-color-primary-hue: 40;
+    --tavenem-light-color-primary-saturation: 46%;
+    --tavenem-light-color-primary-lightness: 38%;
+    --tavenem-font-family-title: 'Playfair Display SC';
+}
+html { height: 100%; }
+body { min-height: 100%; }
+#app {
+    height: 100vh;
+    position: relative;
+}
+#bg-container {
+    background-image: url('/images/background_image.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    left: 0;
+    opacity: .15;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--tavenem-color-primary);
+}
+.loading-icon-container {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#load {
+    position: absolute;
+    width: 600px;
+    height: 36px;
+    left: 50%;
+    top: 40%;
+    margin-left: -300px;
+    overflow: visible;
+    user-select: none;
+    cursor: default;
+}
+    #load div {
+        position: absolute;
+        width: 20px;
+        height: 36px;
+        opacity: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        animation: move 2s linear infinite;
+        transform: rotate(180deg);
+        color: #35C4F0;
+    }
+        #load div:nth-child(2) { animation-delay: 0.2s; }
+        #load div:nth-child(3) { animation-delay: 0.4s; }
+        #load div:nth-child(4) { animation-delay: 0.6s; }
+        #load div:nth-child(5) { animation-delay: 0.8s; }
+        #load div:nth-child(6) { animation-delay: 1s; }
+        #load div:nth-child(7) { animation-delay: 1.2s; }
+@keyframes move {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    35% {
+        left: 41%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    65% {
+        left: 59%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+}
