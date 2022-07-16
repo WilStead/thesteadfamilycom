@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Wil Stead">
+    <meta name="description" content="Welcome to the Stead Family website!">
+    <title>The Stead Family</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Encode+Sans+SC:wdth,wght@75,100..900&family=Recursive:slnt,wght,CASL,MONO@-15..0,300..1000,0..1,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link href="css/framework.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="manifest.json" rel="manifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="apple-mobile-web-app-title" content="TheSteadFamily.com">
+    <meta name="application-name" content="TheSteadFamily.com">
+    <meta name="msapplication-TileColor" content="#f1e4ff">
+    <meta name="theme-color" content="#7f00ff">
+</head>
+
+<body>
+    <div class="framework">
+        <div class="appbar primary top" style="font-family:var(--tavenem-font-family-title);--button-inherited-font-size:1.5em">
+            <div class="toolbar">
+                <a href="/" class="btn btn-text me-4">Our story</a>
+                <div class="d-none d-md-flex">
+                    <a class="btn btn-text primary" href="https://williamstead.com">Wil's website</a>
+                    <a class="btn btn-text primary" href="https://www.jessihigginbotham.com">Jessi's website</a>
+                </div>
+                <div class="d-md-none">
+                    <button id="appbar-dropdown-toggle"
+                            class="btn primary btn-text"
+                            style="position:relative;font-family:var(--tavenem-font-family-title)">Our websites</button>
+                    <div id="appbar-dropdown"
+                         class="filled popover primary"
+                         tabindex="0">
+                        <div id="appbar-dropdown-list" class="list clickable filled solid primary">
+                            <a href="https://williamstead.com">Wil's site</a>
+                            <a href="https://www.jessihigginbotham.com">Jessi's site</a>
+                        </div>
+                    </div>
+                </div>
+                <button id="light-dark-toggle" class="btn d-print-none btn-icon primary ms-auto" @onclick="OnClickAsync">
+                    <tf-icon id="light-dark-toggle-icon">light_mode</tf-icon>
+                </button>
+            </div>
+        </div>
+        
+        <main id="main-container" class="container mt-3">
+            <div id="bg-container"></div>
+            <div class="container-fixed">
+                <h1 class="danger">Sorry</h1>
+                <p>Looks like there's nothing here.</p>
+                <p>If you followed a broken link to get here, please <a href="mailto:wil.stead@williamstead.com">let me know</a>.</p>
+            </div>
+
+            <footer class="site-footer primary">
+                <small>© 2018-2022 <a href="mailto:wil.stead@williamstead.com">Wil Stead</a></small>
+                <div id="footer-bg"></div>
+            </footer>
+        </main>
+
+        <div id="scroll-to-top" class="scroll-to-top hidden">
+            <span class="btn btn-icon primary filled">
+                <tf-icon>expand_less</tf-icon>
+            </span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="site.js"></script>
+</body>
+
+</html>
