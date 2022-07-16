@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Wil Stead">
+    <meta name="description" content="Welcome to the Stead Family website!">
+    <title>The Stead Family</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Encode+Sans+SC:wdth,wght@75,100..900&family=Recursive:slnt,wght,CASL,MONO@-15..0,300..1000,0..1,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link href="css/framework.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="manifest.json" rel="manifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="apple-mobile-web-app-title" content="TheSteadFamily.com">
+    <meta name="application-name" content="TheSteadFamily.com">
+    <meta name="msapplication-TileColor" content="#f1e4ff">
+    <meta name="theme-color" content="#7f00ff">
+</head>
+
+<body>
+    <div class="framework">
+        <div class="appbar primary top" style="font-family:var(--tavenem-font-family-title);--button-inherited-font-size:1.5em">
+            <div class="toolbar">
+                <a href="/" class="btn btn-text me-4">Our story</a>
+                <div class="d-none d-md-flex">
+                    <a class="btn btn-text primary" href="https://williamstead.com">Wil's website</a>
+                    <a class="btn btn-text primary" href="https://www.jessihigginbotham.com">Jessi's website</a>
+                </div>
+                <div class="d-md-none">
+                    <button id="appbar-dropdown-toggle"
+                            class="btn primary btn-text"
+                            style="position:relative;font-family:var(--tavenem-font-family-title)">Our websites</button>
+                    <div id="appbar-dropdown"
+                         class="filled popover primary"
+                         tabindex="0">
+                        <div id="appbar-dropdown-list" class="list clickable filled solid primary">
+                            <a href="https://williamstead.com">Wil's site</a>
+                            <a href="https://www.jessihigginbotham.com">Jessi's site</a>
+                        </div>
+                    </div>
+                </div>
+                <button id="light-dark-toggle" class="btn d-print-none btn-icon primary ms-auto" @onclick="OnClickAsync">
+                    <tf-icon id="light-dark-toggle-icon">light_mode</tf-icon>
+                </button>
+            </div>
+        </div>
+        
+        <main id="main-container" class="container mt-3">
+            <div id="bg-container"></div>
+            <div class="container-fixed">
+                <h1 class="align-self-center">Hi!</h1>
+                <img src="https://lh3.googleusercontent.com/Nc-uWciGZnfgGGJ-_NWxhdhvhsUZYyB8B9r4PYbXlsHyzxsZa_5aSg4Ivk47ZW7io1YqltwOxnEhkNI96pOHR_-Hln6yGEgUEnGKnjhR5kvd-wqP9SvUnekhVGUdvQIbViYW-B9d0gU=w2400" referrerpolicy="no-referrer" style="align-self:center;max-height:75vh;max-width:90vw" />
+                <p class="align-self-center">We're <a href="https://liamstead.com">Liam</a>, <a href="https://jessihigginbotham.com">Jessi</a>, <a href="https://violetstead.com">Violet</a>, and <a href="https://williamstead.com">Wil</a>.</p>
+                <div class="masonry">
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/HteXdqMAqwYbMr9frHQFKxpa6v_IclcWlSFzsNkc0sW4WwzAnrNKkb0QXlFrCFal9jJBPQNTFaDKr_M-4bP_KHj2du7JBVAPsckmliGHy_xHsWvIwv303stx_zUfddzXc-MlnqhAHik=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/2oMExhDhGdN57VPpDSXvyilec948HDZjqW9u0s0eA6ibIWIAVmaLNaiXeFqTFAzKIYWp-eooBs1E844dwF7WG8pzja8LtvpPjvoOT9fQBt8F1BmhdwP3Tl7CfKO4hgEV8MDXTwJuxbE=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/xGkflJmd5bCo9LE7ulN0EcyHAPMrkwwKUVoUjd-bpHfvHat7DdsNN48JMYCNJXmlUhfVqTB0HboYkyVb8nEV9CFcPe00A2QViBDzYcBO5v5H-CyCoE9GZB4uhLumcBvOnY9upiQ53KY=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/q8g7nXZ8deXebyOIAP6EPdSFh4gbVLAAptyse-YUMQKwYzWSKLVEJS_4pst_uhHy1sQwCKbmnFTX7tmRjxNXjeloDvR3gT9xSF30edoR8Jj-paritI8HpSTW23zhvNR9m66cKXWmnZk=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/5uGKo_8qpLNHUYPneMMQTFCKeqnWxdk6qOrSqSEQzhRAh6nb7zf7K-meLfhUJMsrMKQrNkbCvDpjJupWXKYh2DsV_FkIFa8Rc8y79r8KgLPkxO5S_wN_nHEWf-x5yfcotepWecKyOJA=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/WezvOt8tDwvoQ7gyuriG2ZGDQx1JeBTeza5VDLvCC6np5QcuIXkO7JSMoerN4FN1lVqoyQ7CqzGuHsFWrUEylj2K5PZmf8T5JpO6bdOs2lgQnyDpkmNPv8xLWdvhkNClx3hs85swspE=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/yVIysVAEFY0WIp7Dpsa_TGNTFIOVZF6vv4HAt7mq1TO1rUaUzojj70sk5dWtTS8HhSeqGlrtJdcCqny2J8-9M7__n4TC34P5nk4jXgn9Y0GFPwgXhLAvKUR6wM1iGqAMekSwuKcDbZ0=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/MTyVY4Zk1lMmYYoclbE2-yCj-SDBTw9IDSxd4YXHw8hZdZOIb8B6Vl8EYuT9URW12JWlFkssOGAPTMHZKf44NCNY1OHPDCXIHner7oP1PKfD72UjFyu1fl0CXkYjpD9J89K76oSEzFM=w600" />
+                </div>
+                <h2>Our Story</h2>
+                <h3>The Meeting</h3>
+                <p>
+                    How we met is very funny. Both Jessi and Wil were in seminary training to be minsters. Actually, JESSI was training to be a minister while WIL was training to be a Catholic Priest. They took a class together at Baptist Hospital in Jacksonville, FL one summer (CPE) and became quick friends (along with the rest of their classmates).
+                </p>
+                <p>
+                    <img class="article-photo" src="https://lh3.googleusercontent.com/9OoTCRKO5M0KykUkrCxU4nedobJl0znfW96PvJ1Q7HWmGWJk4revJGd4RJ_jyfJlP5r-ok2wrnr1sz8LH7qIbPtX5cftU6KK8X_l8rT3C4-ouxzi204bfSWpRPzs0jr4e5qX_3WaLF0=w512" alt="First Meeting" align="left" />They both admit on the first day of class they liked each other very much &mdash; but just as friends.
+                    After classes ended they went back to their seminaries but stayed in touch through email over the next 8 years!!
+                </p>
+                <p>
+                    One day Jessi got an email from LinkedIn saying Wil Stead wanted to connect and she was puzzled &mdash; why would a priest need LinkedIn? So, she emailed to ask how things were going and discovered 6 years prior Wil had left the seminary and gone back to school to be a Software Engineer.
+                </p>
+                <p>
+                    Jessi was working as an Associate Pastor in her hometown of Jacksonville and Wil was just an hour away in Daytona Beach. They met up for their first reunion/lunch/date in St Augustine &mdash; a city they now call their favorite spot and the rest is history.
+                </p>
+                <h3>The Proposal</h3>
+                <p>
+                    The Christmas season is a hectic time of year for any pastor, and even in Florida the weather can get chilly and wet. So the very next day after Christmas was done, Jessi and Wil headed south, to spend a week in the tropical paradise of Punta Cana, in the Dominican Republic.
+                </p>
+                <p>
+                    <img class="article-photo" src="https://lh3.googleusercontent.com/XrpKzbdzVfAbZNvSym8M4UFLR4oYGmRT3w__OwqNeOIXPm4GYq2Ll8ZFKCoszJjEKDWczcnZurKVDN6xq-Ekj9ySipaNk7bkXwtcoeIy0fKdlxfVba_NgEBVSO5_TW40ZbKR6d84cMw=w600" alt="Engagement" align="right" />The island was beautiful, and Wil couldn't wait more than a day before putting his plans into motion. On the second night of their trip, he arranged for a private, moonlit dinner on the beach. Romance was in the air ... and then suddenly, so was the sound of the wedding reception in the clubhouse behind them!
+                </p>
+                <p>
+                    Fighting past their laughter as the soundtrack to their romantic evening switched from the sounds of the ocean tide to the sounds of <cite>Yeah!</cite> by Usher, Wil got to one knee and proposed.
+                </p>
+                <p>
+                    Jessi and Wil then spent an incredible week enjoying their tropical getaway together, knowing that one day soon they would be enjoying a wedding reception of their own.
+                </p>
+                <h3>The Wedding</h3>
+                <p>
+                    <img class="article-photo" src="https://lh3.googleusercontent.com/iA3I23K4Tr4BTypxqiztdyAI0sQXrYvTPX0ftbKtAbR-JV9MU2Z23ByX0LLTU_JiV10qarOAHn6JT8X1YYvtH-f7IjyLpKCBopRFaxSmbcXr5KHhfDKRN2zFeCh_ut-U-fzMVEaCNNI=w600" alt="Rings" align="left" />On Saturday, May 26, 2018, Wil and Jessi gathered with a small group of friends and family at the historic San Marco Preservation Society chapel. The weather was lovely, the setting couldn't be more picturesque, and the bride and groom were both excited for everything that was about to happen.
+                </p>
+                <p>
+                    The day was just as wonderful as they both had imagined. One special highlight was Wil's surprise presentation of an "adoption" certificate for Ella, Jessi's adored and adorable Dachshund.
+                </p>
+                <p>
+                    <img class="article-photo" src="https://lh3.googleusercontent.com/Hday4v7zOuxxTRrJpnqSh0XWbSHcVQglpwltWvLHyJAhrbB6UGqueflTMO35StpmCzCqrO7ii6pi9trj3GR4K4gKeTLk4JvZVUEpIKYKFQPdTWpic5Qmop2qlMtzQ9CHU7MstjdcGbM=w600" alt="San Marco Presbyterian Hall" align="right" />The rest of the ceremony, reception, and all the days that followed were nothing but magical. Jessi and Wil were soon headed off to the northern California coast for their honeymoon, where they would cross an item off Jessi's bucket list: the famous Glass Beach.
+                </p>
+                <h3>The Big Announcement</h3>
+                <p>
+                    <img class="article-photo" src="https://lh3.googleusercontent.com/VbIJN7cMlajYWbBRCiCeFx3Mi_8jQ8Z2CDlTiSd6_U03H7AhRQaV2QoDTSYHjOSOLMzommhgZYzdNEn_XwNWSZJ0HmBXa3MBrwS-pjFZWwqAomUb5R9r8tweq6ohzqQ4La4-10cb1hU=w600" alt="Baby Announcement" align="left" />In the fall of 2019 Wil and Jessi made a big announcement: they were having a baby girl! The newest addition to the family was due to arrive the following spring, and the happy couple couldn't be more excited.
+                </p>
+                <h3 style="color: violet;">Violet!</h3>
+                <p>
+                    <img class="article-photo" alt="Baby Girl" align="right" src="https://lh3.googleusercontent.com/yVIysVAEFY0WIp7Dpsa_TGNTFIOVZF6vv4HAt7mq1TO1rUaUzojj70sk5dWtTS8HhSeqGlrtJdcCqny2J8-9M7__n4TC34P5nk4jXgn9Y0GFPwgXhLAvKUR6wM1iGqAMekSwuKcDbZ0=w600" />On March 24, 2020 at 1:16 a.m., <span style="color: violet;">Violet</span> Jean Stead joined the family. She weighed 6 lb. 2 oz. and was 19.25 inches long: a lot of cuteness in a tiny package!
+                </p>
+                <h3>Liam!</h3>
+                <p>
+                    <img class="article-photo" alt="Baby Boy" align="left" src="https://lh3.googleusercontent.com/Q8kD8ihjodb_VDkDhhVtz0B81HsN8J09IrxrHSs_YeGmknF_bFs6THtQmY0q9su845HURyon0RLiOMOAuE8f2rgMsbETctnV3MFzZ8ar0AISxWgOsfOQEVoLhPQBJE4RimCmMgogaVo=w600" />On October 17, 2021, William David Stead joined the family. He weighed 5 lb. 15 oz. and was 18 inches long: even tinier than his big sister, after arriving early.
+                </p>
+                <p>
+                    <img class="article-photo" alt="Big Sister" align="right" src="https://lh3.googleusercontent.com/hb5si5tM3hfjzvlO4EHsyIsou-cA5MiLr7gkXEYDigLU9l5N3LJnJd0XUYdHFulNTAi_d0cfXgz3lRO7BAJNP5WsQSpP2LrNU7y2YsLStY7L0tsqBpxzx6x_Ky0FkY7Gd4ItROdjYrQ=w600" />And Violet turns out to be the best big sister ever, giving her baby brother Liam lots and lots of hugs and kisses!
+                </p>
+                <div class="masonry">
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/VbIJN7cMlajYWbBRCiCeFx3Mi_8jQ8Z2CDlTiSd6_U03H7AhRQaV2QoDTSYHjOSOLMzommhgZYzdNEn_XwNWSZJ0HmBXa3MBrwS-pjFZWwqAomUb5R9r8tweq6ohzqQ4La4-10cb1hU=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/7B6kkfofQ2qWWRLICHp_CgM4AzBBaN6spk00JLlgfcrhnhpMcjvVKqlUXullq2MAhNNEF-7UoF1f8xk5y841L6XbZMV95FUNGi7F27gLUBzn8cxakWFaAdrmtZGAKSOxiRBo9bYJZYw=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/jUB1A3VmHw8JNv67-RA549t_6uD-AFwwrFq-I6RGqg8efOeXAFDGEp3R7ucv_QM6XkDSI1i8YY_KLBuu9aeSFjBuZEeIjONTXnHkl7tBjfU3oBpE2Wu5Dh0rY5waO98UZdGsdILX4Bo=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/0ozaFvCh5-pR-B2M0zYoC4VwYT4Mx-O_JP4DHaO0NxOI-wevtRP9Kwk_WAowTQpmuriuo7upM0Uby-wAqJ4OPdCstl0PTiDsNcTyi1m3mVBppg-sWMfhfh7sJ3a-BdynDhXSN8OzYZ4=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/_ypagOTxtPZSQzjImc7x6Si_v8U0gPVX5UnOmIPUlA4VI3GDIrhetniIpIm7A7rv1SAEScRxP67qoDgzQKyH20WvLydTkjivMWsoC2YwOLk-s-x-9JFbi4SET2dXwkKMELPQ8UJ_D6c=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/qh2kU73_fYN-9_KB4SRM7sV9iYXoYsX0XzSsJcg6MQQ6qPTSfc8GJV4LYo0LX6VbLiGZVrMZtsIDZGkD9W5zphSZ2K5XPJ5tz9toYclgcFpO-sfnQYhVuWcV_EQRqPvhv3EUe5rPwt0=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/Xf5Joxca4rx1xqYsWG5obV6fV4AIDPwrDTUfrPCg90Va-D5-bE6Nhys58pLZwuH-0_177XKZF5kpXaJZG5da8tXNoAuJ58CKVivxo1niQAtaYprGgrjdrX9AiqU8_e3OlqyLNKCvaH0=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/BiGEJGTJniy3WNTCC_NfEFhUIcs96EoIFykVqkVoqhFF-G02ezbl0EVtd0VrIvzLAGwgqUj54aZOFdauh3JeEEEcu2K7yoPGv-auyfIU8-WDVCmoplBZnxvrzlZRJ2Zc189SC-yRTOM=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/8oLf-ERGScqbIEWviakBbvUjW7L_frZtrcYBsRa8-6oagWkAqPsLlq_bHMFlrlidafjT6x1y_WC2L7b1h97qWzHUKDHW4Su_fygFWpClEvcleIMI_Y0-C5KDt9ruEXQTRJfXarnWnp4=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/hPrFFLJsAvrFookH1nL8XRB0cZnIFUbUJc0pZwmz8zorgTriBzXvaS-AmLdOIsRGw6sWq2iG3DUDQgW6y_AetgsFjYNRCErNBYuaaZIBQl48Cz4qFY3vB3csQadCw77zlHBLUg-bSkc=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/xNsDF0y7VziIgh5RmmBTP27ou1v_VoP9riBzvYSe499LdPSd6YfYZqSQApN-qXjWFssbFvOgtfH4L8jMk2On22gGx-8paTxzNy3t6o2jEk9br4nK4cEMCkGCbDFdJNUyM5eB25lHMj4=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/N5qGb5bgitGMdkspXriX6wciv0d2WrJmvCs7osJ7gpBvPNOCZuRhzGMAYK6Ee79R3ejw5jfsQcbhtsnGw3OCDmZ0dKuiogym2YMVy9XLz-RytyVCU6SGPtP7zV1jY3Quu1YoTp5AlfE=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/MwagVdMrzjeoJRq-zSPYQiiyKjq4JFnV3LEIMNXOxqcz0S9Jg_5ijAcBy_43RPCZLMRDFfA3qJDzNj_BgHCd4GZCKmRhPha95ghEf9FKykWwNx7vMLfEOaHV4QxfRsIgldvNQWpgPYM=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/0QGpJKrcrLNZl3Bg6LX_8DSNNwmlddsqFu3UwjH5NeZ0skSXNHiqOK5JDlNCM_bW4KTaBmvECSqy50mYuEFBKtQ-erJHm-piqnH22tseqA-3fqJNgXHmqC-IQLybRU0w8sYLqCHRDtc=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/QOzUvP_d1bZCRgQG7uLYeJrxoLD93-_nqVtu_AVkQGaAoPxxDjfvsvxkdc4T8CwNgWia8lLwD_tzfcRo7IaV70VG8JbZRHNJWl-cciRoLcDX1yT41G7WXQjM5XO8Plr7lXgzDz0fwWg=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/2UUl-m1pCohBOCLFPY7p3_ofV8rMZUbsSKLCozmwUhNDrKjyVirvWeDiHatMPWeJjAcMQHP1t6J86Kv4jY08z3vbSRo0L3J7VBHH82IpDF6pZUhdhp6yUvQnd1y_XeXxVYMHXVAgZ1w=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/UIA8Ja0Gbd1oPJVzGISPu3FIbAkgq3scLNzsPM8O8rj7FjL-PD_cosfdqkDbFIhaOxM-m24fxmyKJPiKOJFwXrmmdJw_BUFDj_Xpm7mnDKOfLqJF0AMULHweDaiaXeHWx1OYlUoeBEs=w600" />
+                    <img tabindex="0" src ="https://lh3.googleusercontent.com/HcsEQgtqGR3gVZ4Z1qJcH6wPNSx3WZGot0d99g8eVEpkn8dulENQyDR87UxJ4ujm-gtd4_vlKRchCEh2yF8C3BCB8G2pS66kVI6jXNrwyIefJaSEUYwgasGo2s1XD1azXLNaurD9L6E=w600" />
+                </div>
+            </div>
+
+            <footer class="site-footer primary">
+                <small>© 2018-2022 <a href="mailto:wil.stead@williamstead.com">Wil Stead</a></small>
+                <div id="footer-bg"></div>
+            </footer>
+        </main>
+
+        <div id="scroll-to-top" class="scroll-to-top hidden">
+            <span class="btn btn-icon primary filled">
+                <tf-icon>expand_less</tf-icon>
+            </span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="site.js"></script>
+</body>
+
+</html>
