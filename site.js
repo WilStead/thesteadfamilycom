@@ -1,3 +1,4 @@
+let _currentScheme;
 let _manualColorTheme = false;
 let _saved_theme;
 let _scrollToTopVisible = false;
@@ -88,6 +89,7 @@ function setColorScheme(theme, manual) {
     if (theme == 0) {
         theme = preferred;
     }
+    _currentScheme = theme;
 
     if (theme == 2) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -126,13 +128,13 @@ if (window.matchMedia) {
     const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
     colorSchemeQuery.addEventListener('change', setPreferredColorScheme);
 }
-const currentScheme = getPreferredColorScheme();
-if (currentScheme == 2) {
-    setColorScheme(currentScheme);
+_currentScheme = getPreferredColorScheme();
+if (_currentScheme == 2) {
+    setColorScheme(_currentScheme);
 }
 
 lightDarkToggle.addEventListener('click', () => {
-    setColorScheme(currentScheme == 2 ? 1 : 2, true);
+    setColorScheme(_currentScheme == 2 ? 1 : 2, true);
 });
 
 scrollToTop.addEventListener('click', () => {
