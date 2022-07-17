@@ -1,3 +1,3 @@
 # thesteadfamily.com
 
-This is the repository for my family website: [https://thesteadfamily.com/](https://thesteadfamily.com/). ![Build and deploy](https://github.com/WilStead/thesteadfamilycom/workflows/Build%20and%20deploy%20the%20site/badge.svg)
+This is the repository for my family website: [https://thesteadfamily.com/](https://thesteadfamily.com/). [![Deploy the site](https://github.com/WilStead/thesteadfamilycom/actions/workflows/deploy.yml/badge.svg)](https://github.com/WilStead/thesteadfamilycom/actions/workflows/deploy.yml)
